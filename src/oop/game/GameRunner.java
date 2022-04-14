@@ -2,11 +2,8 @@ package oop.game;
 
 
 import oop.characters.*;
-import oop.characters.Character;
-import util.Input;
+import oop.util.Input;
 
-import java.util.Random;
-import java.util.Scanner;
 
 public class GameRunner {
 
@@ -19,7 +16,7 @@ public class GameRunner {
             hero = new Warrior("Warrior");
         } else if (heroChoice.equalsIgnoreCase("knight")) {
             hero = new Knight("Knight");
-        }else {
+        } else {
             hero = new Mage(2000, 150, "zappy boi aka Samuel Moore");
         }
 

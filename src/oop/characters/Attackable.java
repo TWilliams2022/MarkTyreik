@@ -8,4 +8,3 @@ public interface Attackable {
     void spAttack();
 }
 
-// attackable
