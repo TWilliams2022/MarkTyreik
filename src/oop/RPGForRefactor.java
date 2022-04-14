@@ -9,7 +9,7 @@ public class RPGForRefactor {
 
         // ENEMIES
 
-        String[] enemies = { "Clown Zombie", "Bill Murray Zombie", "Carney Zombie", "Huge Zombie" };
+        String[] enemies = {"Clown Zombie", "Bill Murray Zombie", "Carney Zombie", "Huge Zombie"};
 
         // ENEMY VARIABLES
         int maxEnemyHealth = 75;
@@ -42,25 +42,25 @@ public class RPGForRefactor {
             System.out.println("'w' for Wichita");
             System.out.println("------------------------");
             String character = scanner.nextLine();
-            while(character.toLowerCase().charAt(0) != 'c' && character.toLowerCase().charAt(0) != 't' && character.toLowerCase().charAt(0) != 'w') {
+            while (character.toLowerCase().charAt(0) != 'c' && character.toLowerCase().charAt(0) != 't' && character.toLowerCase().charAt(0) != 'w') {
                 System.out.println("'c' for Columbus");
                 System.out.println("'t' for Tallahassee");
                 System.out.println("'w' for Wichita");
                 System.out.println("------------------------");
                 character = scanner.nextLine();
             }
-            if(character.toLowerCase().charAt(0) == 'c'){
+            if (character.toLowerCase().charAt(0) == 'c') {
                 System.out.println("Columbus, you are entering Pacific Playland");
             }
-            if(character.toLowerCase().charAt(0) == 't'){
+            if (character.toLowerCase().charAt(0) == 't') {
                 System.out.println("Tallahassee, you are entering Pacific Playland");
             }
-            if(character.toLowerCase().charAt(0) == 'w'){
+            if (character.toLowerCase().charAt(0) == 'w') {
                 System.out.println("Wichita, you are entering Pacific Playland");
             }
 
             GAME:
-            while(gameRunning){
+            while (gameRunning) {
                 System.out.println("Watch out for Zombies!!");
                 System.out.println("     ________     ");
                 System.out.println("   (  O   o   )");
@@ -77,7 +77,7 @@ public class RPGForRefactor {
                 System.out.println(enemy + " has appeared!");
                 System.out.println("[¬º-°]¬");
 
-                while(enemyHealth > 0) {
+                while (enemyHealth > 0) {
                     System.out.println("----------------------------------------");
                     System.out.println("Would you like to see your health stats? [yes/no]");
                     String statsInput = scanner.nextLine();
@@ -104,7 +104,7 @@ public class RPGForRefactor {
 
                     String input = scanner.nextLine();
 
-                    if (input.equals("1")){
+                    if (input.equals("1")) {
                         int damageDone = doubleTapDamage;
                         int damageTaken = enemyAttackDamage;
                         enemyHealth -= damageDone;
@@ -139,9 +139,11 @@ public class RPGForRefactor {
                     } else if (input.equals("3")) {
                         heroHealth += whiteClawAmount;
                         whiteClaw -= 1;
-                        System.out.println("The White Claw gave you 25 health points! You now have " + heroHealth + " health points and you need to go to the store to get more White Claws!");
+                        System.out.println("The White Claw gave you 25 health points! You now " +
+                                "have " + heroHealth + " health points and you need to go to the " +
+                                "store to get more White Claws!");
 
-                    } else if (input.equals("4")){
+                    } else if (input.equals("4")) {
                         System.out.println("Really?, you're just going to run away like that?");
                         continue GAME;
 

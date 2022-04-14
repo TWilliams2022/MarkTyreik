@@ -8,7 +8,8 @@ public class Person {
     private String dateOfBirth;
     private String[] address;
 
-    public Person(){}
+    public Person() {
+    }
 
     public String getName() {
         return name;

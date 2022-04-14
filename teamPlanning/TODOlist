@@ -1,0 +1,38 @@
+Ty Tasks:
+1.
+2.
+3.
+
+
+
+Mark Tasks:
+1.
+2.
+3.
+
+Overall Tasks below:
+
+        You will need to copy over the game and characters packages into your repo. Also, make sure that your src folder is set to the project root (blue folder in intellij).
+        Follow good pair programming practices (30 minutes driving, 30 minutes navigating)
+        Here are the requirements:
+        Must have a Defendable interface
+        defend()
+        spDefend()
+        Character must implement Defendable
+        Your choice and where and how defend() and spDefend() are implemented or overridden
+        Character must implement Rollable
+        int roll()
+        character1 rolls attack, character2 rolls for defend
+        bool compare()
+        if attacker’s roll is higher than defender’s roll then attack happens minus the defense value
+        if attacker’s roll is lower than defender’s roll then the attack is unsuccessful and no damage is taken
+        Output should show the attacker’s roll and the defender’s roll + who one the roll and what attack was used
+        GameRunner must allow for at least two characters to be created (one hero and one enemy) who will attack and defend in alternate turns until the hp of one character is fully depleted
+        GameRunner must allow for the user to choose to replay or not
+        The output should initially show the stats of all characters and show the remaining health of each character with each turn
+        Nice to have:
+        The characters should have usernames (name) which display along with the type of character and their stats
+        Make two more hero and two more enemy classes
+        Allow the game to wait on user choice
+        Add a Weapon abstract class and allow that to be extended by other classes (ie: sword, staff, etc)
+        Add a Weapon field to the Character abstract class and allow the Hero/Enemy implementations to assign a personalized weapon to the instances (ie: Knight has a Weapon field which is an instance of Sword and has an attack damage of 100pts or something)

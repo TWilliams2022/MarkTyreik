@@ -13,7 +13,7 @@ public class Enemy extends Character {
         System.out.println("Enemy Attack!");
     }
 
-    public void spAttack(){
+    public void spAttack() {
         System.out.println("Used Special Attack for " + spAttackDamage + " damage");
     }
 

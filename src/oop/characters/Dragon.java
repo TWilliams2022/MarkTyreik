@@ -1,6 +1,6 @@
 package oop.characters;
 
-public class Dragon extends Enemy{
+public class Dragon extends Enemy {
 
     public Dragon() {
         super(200, 100);
@@ -13,7 +13,6 @@ public class Dragon extends Enemy{
     public void attack() {
         System.out.println("Breathe fire!");
     }
-
 
 
 }
