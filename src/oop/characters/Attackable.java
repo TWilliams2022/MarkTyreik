@@ -7,3 +7,4 @@ public interface Attackable {
     void attack();
     void spAttack();
 }
+

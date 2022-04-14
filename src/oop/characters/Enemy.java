@@ -17,4 +17,5 @@ public class Enemy extends Character {
         System.out.println("Used Special Attack for " + spAttackDamage + " damage");
     }
 
+
 }

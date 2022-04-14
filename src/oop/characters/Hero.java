@@ -17,7 +17,18 @@ public class Hero extends Character {
         this.name = name;
     }
 
-    public void spAttack(){
-        System.out.println("Used Special Attack for " + spAttackDamage + " damage");
+    public void spAttack() {
+        System.out.println("Used Special Attack for " + spAttackDamage + "% damage");
     }
+
+    public void spDefense() {
+        System.out.println("Gaurded themselves with " + spDefenseBlock + "% defense");
+    }
+
+
+    public void defense() {
+
+    }
+
+
 }
