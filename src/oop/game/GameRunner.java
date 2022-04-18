@@ -21,6 +21,7 @@ public class GameRunner {
         }
 
         hero.attack();
+        hero.spAttack();
 
     }
 

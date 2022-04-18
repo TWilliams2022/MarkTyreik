@@ -1,7 +1,5 @@
 package oop.characters;
 
-import oop.characters.Character;
-
 public class Zombie extends Enemy {
 
     private boolean isRotting;

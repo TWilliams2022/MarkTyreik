@@ -1,6 +1,5 @@
 package oop.characters;
 
-import oop.characters.Character;
 
 public class Enemy extends Character {
 

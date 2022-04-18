@@ -1,10 +1,12 @@
-
 package oop.characters;
 
-public interface Defenseable {
+public interface Defensible {
 
     int defenseRegular = 3;
 
     void defense();
-    void spDefense();
+
+    void spDefenseBlock();
+
+
 }
